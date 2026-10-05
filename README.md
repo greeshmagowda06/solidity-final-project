@@ -1,57 +1,50 @@
-# Sample Hardhat 3 Project (`node:test` and `viem`)
-
-This project showcases a Hardhat 3 project using the native Node.js test runner (`node:test`) and the `viem` library for Ethereum interactions.
-
-To learn more about Hardhat 3, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3](https://hardhat.org/hardhat3-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+# AssetPass – Blockchain-Based Digital Artwork Verification & Marketplace
 
 ## Project Overview
 
-This example project includes:
+AssetPass is a blockchain-based digital artwork management, verification, and marketplace system built using **Solidity, Hardhat 3, TypeScript, Viem, and the Ethereum Sepolia Testnet**.
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using [`node:test`](nodejs.org/api/test.html), the new Node.js native test runner, and [`viem`](https://viem.sh/).
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
+The project provides a transparent way to:
 
-## Usage
+- Register digital artwork on the blockchain
+- Approve trusted verifiers
+- Verify the authenticity of artwork
+- List verified artwork for sale
+- Allow buyers to purchase listed artwork
+- Maintain ownership records on-chain
+- Prevent unauthorized verification
+- Prevent frozen artwork from being transferred
 
-### Running Tests
+This project was developed as an **academic/college blockchain project**.
 
-To run all the tests in the project, execute the following command:
+---
 
-```shell
-npx hardhat test
-```
+## Objectives
 
-You can also selectively run the Solidity or `node:test` tests:
+The main objectives of AssetPass are:
 
-```shell
-npx hardhat test solidity
-npx hardhat test nodejs
-```
+1. Register digital artwork on the blockchain.
+2. Approve trusted verifiers.
+3. Allow approved verifiers to verify artwork.
+4. List verified artwork for sale.
+5. Allow buyers to purchase listed artwork.
+6. Prevent unauthorized users from verifying artwork.
+7. Prevent frozen artwork from being transferred.
+8. Maintain ownership and verification records on-chain.
 
-### Make a deployment to Sepolia
+---
 
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
+## Technologies Used
 
-To run the deployment to a local chain:
-
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
-
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
-
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
-
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
-
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
+- **Blockchain:** Ethereum
+- **Network:** Sepolia Testnet
+- **Smart Contract Language:** Solidity `0.8.34`
+- **Development Framework:** Hardhat 3
+- **Deployment:** Hardhat Ignition
+- **Programming Language:** TypeScript
+- **Ethereum Library:** Viem
+- **Testing:** Node.js native test runner
+- **Wallet:** MetaMask
+- **RPC Provider:** Alchemy
+- **IDE:** Visual Studio Code
+- **Contract Interaction:** Remix IDE
